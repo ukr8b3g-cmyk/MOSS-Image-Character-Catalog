@@ -1,0 +1,42 @@
+name: Remove two early tests from v0.1.2
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/refresh-v012-early-test-cleanup.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: refresh-v012-early-test-cleanup
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: contains(github.event.head_commit.message, '[publish-early-test-cleanup-v012]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check existing packaging tools
+        run: |
+          python3 --version
+          7z i
+          gh --version
+      - name: Build with 7-Zip, verify and promote while retaining old assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/refresh_v012_early_tests.py --publish --output "$RUNNER_TEMP/early-test-cleanup-release"
+      - name: Preserve package verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v0.1.2-early-test-cleanup-verification
+          path: |
+            ${{ runner.temp }}/early-test-cleanup-release/verification.json
+            ${{ runner.temp }}/early-test-cleanup-release/publication.json
+          if-no-files-found: ignore
+

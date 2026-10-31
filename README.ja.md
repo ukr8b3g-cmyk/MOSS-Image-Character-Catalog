@@ -1,6 +1,6 @@
-## [▶ ライブデモを開く（全34,251枚）](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)
+## [▶ ライブデモを開く（全34,249枚）](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)
 
-**Hugging Face全件版：キャラクター33,937枚＋スタイル314枚。** インストール・GPUなしで、閲覧・検索・絞り込み・拡大・プロンプトコピーができます。画像は必要に応じて読み込む閲覧専用版です。
+**Hugging Face全件版：キャラクター33,935枚＋スタイル314枚。** インストール・GPUなしで、閲覧・検索・絞り込み・拡大・プロンプトコピーができます。画像は必要に応じて読み込む閲覧専用版です。
 
 **[従来のサンプル120枚デモ（GitHub Pages）も利用できます](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)**（キャラクター96枚＋スタイル24枚）。
 <img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/19c619e5-21dd-464f-90a6-b3c24a22c8fc" />
@@ -8,7 +8,9 @@
 
 ### [↓ 全件版ZIPをダウンロード — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
 
-**34,251枚・約2.07 GB／1.92 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
+**配布ZIP更新（2026-10-31）：** 初期テストのピカチュウ・サーナイト2件を、画像・プロンプト・タグ・ワークフローとともに削除。**キャラクター33,935枚＋スタイル314枚＝34,249枚**。ほかの画像・生成設定は維持し、合否による選別は追加していません。7-Zipで必要なファイルだけ更新しました。照合はReleaseの更新済み `SHA256SUMS.txt` を使用してください。旧ZIP・チェックサムもbefore-early-test-cleanup名で保持します。[検証記録](docs/updates/early-test-cleanup.md)。
+
+**34,249枚・約2.07 GB／1.92 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
 **v0.1.2配布ZIP更新（2026-10-24）：** カタログの太字タイトルから、このリポジトリを新しいタブで開けるようになりました。ZIP内の日本語・英語READMEも更新しています。34,158枚の画像と生成設定は同じです。ダウンロードファイル名は従来どおりで、照合にはReleaseの更新済み `SHA256SUMS.txt` を使ってください。[更新内容](docs/updates/catalog-title-link.md)。
 
@@ -19,7 +21,7 @@
 > [!NOTE]
 > **ブラウザー版は2種類あります。どちらも合否による選別はしていません。**
 >
-> **[Hugging Face全件版：34,251枚](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)**（キャラクター33,937枚＋スタイル314枚）。全件の検索・8カテゴリ絞り込み・拡大・プロンプトコピーに対応します。
+> **[Hugging Face全件版：34,249枚](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)**（キャラクター33,935枚＋スタイル314枚）。全件の検索・8カテゴリ絞り込み・拡大・プロンプトコピーに対応します。
 >
 > **[GitHub Pagesサンプルデモ：120枚](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)**（キャラクター96枚＋スタイル24枚）。従来の抜粋版もそのまま残しています。
 >
@@ -33,15 +35,15 @@
 
 | 全件版ダウンロード | 枚数・容量 |
 |---|---:|
-| キャラクター | **33,937枚** |
+| キャラクター | **33,935枚** |
 | スタイル | **314枚** |
-| **合計** | **34,251枚** |
+| **合計** | **34,249枚** |
 | 圧縮前のファイル合計 | **約2.77 GB／2.58 GiB** |
 | 配布ZIP・標準DEFLATE | **約2.07 GB／1.92 GiB** |
-| 全件オンライン版（Hugging Face） | **全34,251枚**・閲覧専用 |
+| 全件オンライン版（Hugging Face） | **全34,249枚**・閲覧専用 |
 | サンプルデモ（GitHub Pages） | **キャラクター96枚＋スタイル24枚**、約**8.36 MB** |
 
-**公開状況（2026-10-27）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル314枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。Hugging Faceオンライン版は全34,251枚、GitHub Pagesのサンプルデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
+**公開状況（2026-10-27）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター33,935枚＋スタイル314枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。Hugging Faceオンライン版は全34,249枚、GitHub Pagesのサンプルデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
 
 **画像の合格・不合格による選別はしていません。** キャラクターが違うもの、プロンプトと合わないもの、画風の効きが弱いものも含みます。収録や見た目の類似は、正確な再現や学習データへの収録を証明しません。全件オンライン版・サンプルデモともに「合格した画像の一覧」ではありません。
 
@@ -55,14 +57,14 @@
 
 | 機能 | Hugging Face全件版 | GitHub Pagesサンプル | ダウンロード版 |
 |---|---|---|---|
-| 検索・絞り込み・並べ替え・拡大・コピー | **全34,251枚** | **抜粋120枚** | 全件で利用可 |
+| 検索・絞り込み・並べ替え・拡大・コピー | **全34,249枚** | **抜粋120枚** | 全件で利用可 |
 | Add Image、名前・プロンプト・タグ・ワークフローの編集 | — | — | 利用可 |
 | お気に入り・評価・非表示・Undo | — | — | 利用可 |
 | 比較判定・確定した判定JSONの読み込み | — | — | 利用可 |
 | 画像ごとに保存したワークフローJSON | — | — | 利用可 |
 | 画像生成 | なし | なし | ComfyUIで別途実行 |
 
-**全件オンライン版を追加（2026-10-31）：** キャラクター33,937枚・スタイル314枚をHugging Faceで公開しました。公開した原寸画像とサムネイルのハッシュを全件照合し、Chromeの実公開Space内でキャラクター／スタイル表示・検索・分類絞り込み・拡大・両プロンプトのクリップボード一致を確認しています。配信と操作の確認であり、キャラクターや画風の正確さを保証するものではありません。
+**全件オンライン版を追加（2026-10-31）：** キャラクター33,935枚・スタイル314枚をHugging Faceで公開しました。公開した原寸画像とサムネイルのハッシュを全件照合し、Chromeの実公開Space内でキャラクター／スタイル表示・検索・分類絞り込み・拡大・両プロンプトのクリップボード一致を確認しています。配信と操作の確認であり、キャラクターや画風の正確さを保証するものではありません。
 
 GitHub Pagesのサンプルデモは、[Krea2](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog)と同様の静的表示方式で、そのまま残しています。全件の画像は[Hugging Face Dataset](https://huggingface.co/datasets/hide1/MOSS-Image-Character-Catalog)に配置し、GitHub Pagesへは追加していません。[GitHub Pagesサンプルの範囲・公開方法](docs/LIVE_DEMO.md)。
 
@@ -75,10 +77,10 @@ GitHub Pagesのサンプルデモは、[Krea2](https://github.com/ukr8b3g-cmyk/K
 | 追加キャラクター候補 | 80 |
 | Krea2で確認済みだった未収録候補 | 160 |
 | 私服差分の追加 | 2 |
-| 比較テスト | 5 |
-| **追加キャラクター小計** | **247** |
+| 比較テスト | 3 |
+| **追加キャラクター小計** | **245** |
 | 画風・画家・表現媒体などのスタイル | **314** |
-| **追加分の合計** | **561** |
+| **追加分の合計** | **559** |
 
 衣装・形態差分・テストも1枚として数えています。ユニークな人物数ではありません。Krea2の画像や判定結果は取り込んでいません。スタイル314枚は先行40枚・追加181枚・今回追加93枚で、英文で画風の特徴を指定しています。画家名・媒体・アニメ表現などを試した結果であり、再現精度の保証ではありません。
 
@@ -139,7 +141,7 @@ GitHub Pagesのサンプルデモは、[Krea2](https://github.com/ukr8b3g-cmyk/K
 
 ### v0.1.1の変更点
 
-**Copyright件数順**では、作品同士を登録画像枚数順にまとめたうえで、作品内のキャラクター画像を**元CSVのカウントが多い順**に表示するようにしました。同数は名前・画像キー順、カウントを持たない新規登録画像は同じ作品のカウント付き画像の後に並びます。名前順・生成順は従来どおりです。カウントは取得時の参考値で、現在の人気順位を示すものではありません。キャラクター33,937枚・スタイル221枚の画像は変更せず、合否による選別も追加していません。[変更内容](docs/releases/v0.1.1.md)。
+**Copyright件数順**では、作品同士を登録画像枚数順にまとめたうえで、作品内のキャラクター画像を**元CSVのカウントが多い順**に表示するようにしました。同数は名前・画像キー順、カウントを持たない新規登録画像は同じ作品のカウント付き画像の後に並びます。名前順・生成順は従来どおりです。カウントは取得時の参考値で、現在の人気順位を示すものではありません。キャラクター33,935枚・スタイル221枚の画像は変更せず、合否による選別も追加していません。[変更内容](docs/releases/v0.1.1.md)。
 
 ### 探す・コピーする・画像を追加する
 
@@ -178,7 +180,7 @@ GitHub Pagesのサンプルデモは、[Krea2](https://github.com/ukr8b3g-cmyk/K
 | カタログの画像形式 | **WebP品質70**、非可逆、method 0 | 同じ |
 | 汎用サンプルのファイル名 | **`MOSS_Image_Character_Sample.json`** | **`MOSS_Image_Style_Sample.json`** |
 
-キャラクターは**BaseではなくSFT**を使っています。大量の候補を確認するため、8ステップ高速化LoRAを**1.0**で使用しました。LoRAなしのSFTやBF16の最高品質を評価したものではありません。最初の**11,694枚**は `flux2-vae.safetensors`、後半の**22,243枚**は `full_encoder_small_decoder.safetensors` です。画像ごとの保存ワークフローに実設定を残し、汎用キャラクターサンプルはSmall Decoderに揃えています。
+キャラクターは**BaseではなくSFT**を使っています。大量の候補を確認するため、8ステップ高速化LoRAを**1.0**で使用しました。LoRAなしのSFTやBF16の最高品質を評価したものではありません。最初の**11,692枚**は `flux2-vae.safetensors`、後半の**22,243枚**は `full_encoder_small_decoder.safetensors` です。画像ごとの保存ワークフローに実設定を残し、汎用キャラクターサンプルはSmall Decoderに揃えています。
 
 キャラクタープロンプトは元一覧の名前・作品・外見タグを英文へ組み込み、単体・中央・全身・余白・薄いグレー背景・柔らかい照明を共通に指定しています。人物には服を着た立ち姿を指定しました。元タグ、再利用用コピー文、実際の生成プロンプトは別に保持します。このキャラクターバッチにMOSSプロンプトエンハンサースキルは使っていません。
 
@@ -244,3 +246,4 @@ UIは[Krea2 Character Catalog](https://github.com/ukr8b3g-cmyk/Krea2-Character-C
 ## 2026-10-24 検索・フィルター位置の修正
 
 v0.1.2の更新ZIPとデモで、画面移動時の検索引継ぎとフィルター位置復元を修正しました。画像・カタログデータは同じで、旧ZIP／チェックサムも保持します。[変更内容と検証](docs/updates/catalog-ui-state-fixes.md)を参照し、現行Releaseのチェックサムで照合してください。
+

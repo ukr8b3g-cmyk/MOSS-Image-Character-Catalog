@@ -1,8 +1,8 @@
 **[日本語READMEはこちら](README.ja.md)**
 
-## [▶ Open the live demo — all 34,251 images](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)
+## [▶ Open the live demo — all 34,249 images](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)
 
-**Hugging Face full catalog:** 33,937 characters + 314 styles. Browse, search, filter, enlarge and copy prompts without installation or a GPU. Images load as needed; the online catalog is read-only.
+**Hugging Face full catalog:** 33,935 characters + 314 styles. Browse, search, filter, enlarge and copy prompts without installation or a GPU. Images load as needed; the online catalog is read-only.
 
 **[Keep using the 120-image sample demo on GitHub Pages](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)** — 96 characters + 24 styles.
 <img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/f37ba1b4-12d7-4915-a7fe-f6506990f50b" />
@@ -10,7 +10,9 @@
 
 ### [↓ Download the complete catalog ZIP — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
 
-**34,251 images · about 2.07 GB / 1.92 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
+**2026-10-31 package refresh:** Removed the two early Pikachu/Gardevoir test entries, including their images and saved prompt/tag/workflow files. **33,935 characters + 314 styles = 34,249 images.** Other images and generation settings are unchanged; no pass/fail selection was added. The ZIP was selectively updated using 7-Zip. Use the refreshed Release `SHA256SUMS.txt`; the previous ZIP/checksum are retained as before-early-test-cleanup. [Verification](docs/updates/early-test-cleanup.md).
+
+**34,249 images · about 2.07 GB / 1.92 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
 **v0.1.2 package refresh — 2026-10-24:** The catalog title now opens this repository in a new tab. The ZIP also includes updated English and Japanese READMEs. The 34,158 images and rendering settings are unchanged. The download filename stays the same; use the updated `SHA256SUMS.txt` on the Release page to verify this refreshed package. [Update details](docs/updates/catalog-title-link.md).
 
@@ -21,7 +23,7 @@
 > [!NOTE]
 > **Two browser versions are available; neither is a pass/fail selection.**
 >
-> **[Hugging Face full catalog — 34,251 images](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog):** 33,937 characters + 314 styles, with search, eight style categories, enlargement and prompt copying.
+> **[Hugging Face full catalog — 34,249 images](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog):** 33,935 characters + 314 styles, with search, eight style categories, enlargement and prompt copying.
 >
 > **[GitHub Pages sample demo — 120 images](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/):** the existing preview with 96 characters + 24 styles remains available.
 >
@@ -33,15 +35,15 @@ A searchable library of **MOSS-Image-generated images and reusable prompts**, bu
 
 | Complete download | Images / size |
 |---|---:|
-| Characters | **33,937** |
+| Characters | **33,935** |
 | Styles | **314** |
-| **Total** | **34,251** |
+| **Total** | **34,249** |
 | Files before compression | **About 2.77 GB / 2.58 GiB** |
 | Release ZIP, standard DEFLATE | **2.07 GB / 1.92 GiB** |
-| Full online catalog (Hugging Face) | **All 34,251 images**, read-only |
+| Full online catalog (Hugging Face) | **All 34,249 images**, read-only |
 | Sample demo (GitHub Pages) | **96 characters + 24 styles**, about **8.36 MB** |
 
-**Release status — 2026-10-27:** **[v0.1.2 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)** includes the local application, **33,937 character images + 314 styles**, comparison tools and both sample workflow JSON files. The Hugging Face online catalog includes all 34,251 images; the GitHub Pages sample remains at 120. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
+**Release status — 2026-10-27:** **[v0.1.2 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)** includes the local application, **33,935 character images + 314 styles**, comparison tools and both sample workflow JSON files. The Hugging Face online catalog includes all 34,249 images; the GitHub Pages sample remains at 120. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
 
 **The collection has not been selected by pass/fail judgments.** Incorrect character identities, mismatched prompts and weak style results remain included. Neither inclusion nor resemblance proves training-set coverage or accurate reproduction. Neither the full online catalog nor the sample demo is a list of approved results.
 
@@ -55,14 +57,14 @@ Neither browser version needs Python, a GPU or installation. Switch tabs, search
 
 | Feature | Hugging Face full catalog | GitHub Pages sample | Downloadable local version |
 |---|---|---|---|
-| Search, filters, sorting, enlargement, prompt copying | All **34,251** images | **120** samples | Full collection |
+| Search, filters, sorting, enlargement, prompt copying | All **34,249** images | **120** samples | Full collection |
 | Add Image and edit names, prompts, tags or workflows | — | — | Yes |
 | Favorites, ratings, Hide and Undo | — | — | Yes |
 | Comparison judgments and importing confirmed review JSON | — | — | Yes |
 | Saved per-image workflow JSON | — | — | Yes |
 | Generate images | No | No | Use ComfyUI separately |
 
-**Full online catalog added — 2026-10-31:** published all 33,937 characters and 314 styles on Hugging Face. All published original-image and thumbnail hashes were checked. Chrome checks on the public Space confirmed character/style display, search, category filtering, enlargement and exact clipboard copies of both prompt types. These checks verify delivery and operation, not character or style accuracy.
+**Full online catalog added — 2026-10-31:** published all 33,935 characters and 314 styles on Hugging Face. All published original-image and thumbnail hashes were checked. Chrome checks on the public Space confirmed character/style display, search, category filtering, enlargement and exact clipboard copies of both prompt types. These checks verify delivery and operation, not character or style accuracy.
 
 The GitHub Pages sample uses the same static-view approach as [Krea2](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog) and remains unchanged. Full images are hosted in the companion [Hugging Face Dataset](https://huggingface.co/datasets/hide1/MOSS-Image-Character-Catalog), not added to GitHub Pages. [GitHub Pages sample scope and deployment](docs/LIVE_DEMO.md).
 
@@ -75,10 +77,10 @@ This is a **character-list-based catalog with additional samples**, not an Anima
 | Additional character candidates | 80 |
 | Missing candidates previously reviewed in Krea2 | 160 |
 | Casual-outfit additions | 2 |
-| Comparison tests | 5 |
-| **Additional character subtotal** | **247** |
+| Comparison tests | 3 |
+| **Additional character subtotal** | **245** |
 | Picture styles and artist/medium studies | **314** |
-| **Total additions** | **561** |
+| **Total additions** | **559** |
 
 Outfits, forms and tests count as separate images, not unique identities. Krea2 images and verdicts are not imported. The 314 styles include 40 earlier samples, 181 subsequent samples and 93 additions generated on 2026-10-26. Their prompts describe visual characteristics in English; painter names, media and animation styles are experiments, not accuracy guarantees.
 
@@ -178,7 +180,7 @@ These settings document the actual saved catalog workflows, not universal recomm
 | Catalog image format | **WebP quality 70**, lossy, method 0 | Same |
 | Portable sample filename | **`MOSS_Image_Character_Sample.json`** | **`MOSS_Image_Style_Sample.json`** |
 
-The character workflow uses **SFT, not Base**. An 8-step acceleration LoRA at **1.0** made the large run practical. It is not a maximum-quality benchmark of unaccelerated SFT or BF16. The first **11,694** character images used `flux2-vae.safetensors`; the later **22,243** used `full_encoder_small_decoder.safetensors`. Per-image saved workflows preserve those differences; the portable character sample uses Small Decoder.
+The character workflow uses **SFT, not Base**. An 8-step acceleration LoRA at **1.0** made the large run practical. It is not a maximum-quality benchmark of unaccelerated SFT or BF16. The first **11,692** character images used `flux2-vae.safetensors`; the later **22,243** used `full_encoder_small_decoder.safetensors`. Per-image saved workflows preserve those differences; the portable character sample uses Small Decoder.
 
 Character prompts combine the source name, work and appearance tags with one centered subject, full-body framing, generous margins, a light-gray background and soft lighting. Human subjects receive a clothed standing-pose instruction. Source tags, the reusable copy prompt and actual generation prompt are distinct. The MOSS prompt-enhancer skill was not used for these character batches.
 
@@ -244,3 +246,4 @@ Maintainer-authored documentation and the published demo code are covered by [MI
 ## 2026-10-24 UI state refresh
 
 The refreshed v0.1.2 ZIP and demo fix search carry-over during view navigation and restore filter scroll after reload. Images and catalog data are unchanged. Previous ZIP/checksum assets are retained. See [details and validation](docs/updates/catalog-ui-state-fixes.md); use the current Release checksum.
+
