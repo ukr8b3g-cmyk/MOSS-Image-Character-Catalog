@@ -82,7 +82,7 @@ def validate():
     assert total < 20_000_000, 'Unexpected demo growth; review publication scope'
     for name in ['README.md','README.ja.md']:
         text = (ROOT/name).read_text(encoding='utf-8')
-        for required in ['33,937','221','34,158','314','34,251','docs/updates/style93-generation.md','247','561','2.07 GB','1.92 GiB',
+        for required in ['33,937','221','34,158','314','34,251','docs/updates/style93-generation.md','245','559','33,935','34,249','2.07 GB','1.92 GiB',
                          '/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip',
                          'MOSS_Image_Character_Sample.json','MOSS_Image_Style_Sample.json',
                          '8961184','1.0','25','2.5']:
