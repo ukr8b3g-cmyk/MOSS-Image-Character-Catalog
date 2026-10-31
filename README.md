@@ -10,6 +10,8 @@
 
 ### [↓ Download the complete catalog ZIP — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
 
+**2026-10-31 — Back to top:** A floating arrow appears at the lower right after scrolling down. Click it or press Enter while focused to return to the top, in both Characters and Styles. English/Japanese labels and reduced-motion preferences are supported. Included in the refreshed v0.1.2 ZIP, full Hugging Face demo and GitHub Pages sample. Images, prompts and review data are unchanged. [Details](docs/updates/back-to-top.md). Use the current Release checksum; the preceding ZIP/checksum are retained as before-back-to-top.
+
 **2026-10-31 prompt revision:** The refreshed v0.1.2 ZIP and full Hugging Face demo include revised reusable captions and a new **Copy revised generation prompt** button. All 34,249 entries were checked with explicit rules; 5,641 reusable captions and 33,785 full-scene prompts changed. Images were not regenerated. Original workflows retain their historical prompts, including the old framing sentence; use the new copy button for future generation. Ambiguous source attributes remain flagged, and fewer unwanted tails have not been demonstrated. The 120-image GitHub Pages sample remains a separate historical preview. [Changes and limitations](docs/prompt-repair-20261031/README.md). Use the current Release checksum; older assets are retained as before-prompt-revision.
 
 **2026-10-31 package refresh:** Removed the two early Pikachu/Gardevoir test entries, including their images and saved prompt/tag/workflow files. **33,935 characters + 314 styles = 34,249 images.** Other images and generation settings are unchanged; no pass/fail selection was added. The ZIP was selectively updated using 7-Zip. Use the refreshed Release `SHA256SUMS.txt`; the previous ZIP/checksum are retained as before-early-test-cleanup. [Verification](docs/updates/early-test-cleanup.md).
@@ -248,5 +250,3 @@ Maintainer-authored documentation and the published demo code are covered by [MI
 ## 2026-10-24 UI state refresh
 
 The refreshed v0.1.2 ZIP and demo fix search carry-over during view navigation and restore filter scroll after reload. Images and catalog data are unchanged. Previous ZIP/checksum assets are retained. See [details and validation](docs/updates/catalog-ui-state-fixes.md); use the current Release checksum.
-
-

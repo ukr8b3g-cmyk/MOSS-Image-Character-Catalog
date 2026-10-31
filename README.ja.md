@@ -8,6 +8,8 @@
 
 ### [↓ 全件版ZIPをダウンロード — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
 
+**2026-10-31 — 一番上に戻る：** 下へスクロールすると右下に矢印を表示します。クリック、またはフォーカスしてEnterで先頭へ戻れます。キャラクター・スタイル両方、日本語・英語、動きを減らす設定に対応。更新版v0.1.2 ZIP・Hugging Face全件デモ・GitHub Pagesサンプルに反映しました。画像・プロンプト・判定データは変更していません。[詳細](docs/updates/back-to-top.md)。現在のReleaseチェックサムを使用してください。直前のZIP・チェックサムはbefore-back-to-top名で保持します。
+
 **2026-10-31 プロンプト修正：** 更新版v0.1.2 ZIPとHugging Face全件デモに修正版を収録し、拡大画面に**「再生成用をコピー」**を追加しました。全34,249件を規則で点検し、コピー文5,641件・再生成用全文33,785件を修正。画像は再生成していません。当時のワークフローは旧構図文を含む履歴として保持しているため、新しい生成には専用コピーボタンを使用してください。曖昧な元データは要確認として残し、尻尾の減少効果は未検証です。GitHub Pagesの120枚サンプルは別の従来プレビューです。[修正内容と制約](docs/prompt-repair-20261031/README.ja.md)。現在のReleaseチェックサムを使用してください。旧版はbefore-prompt-revision名で保持します。
 
 **配布ZIP更新（2026-10-31）：** 初期テストのピカチュウ・サーナイト2件を、画像・プロンプト・タグ・ワークフローとともに削除。**キャラクター33,935枚＋スタイル314枚＝34,249枚**。ほかの画像・生成設定は維持し、合否による選別は追加していません。7-Zipで必要なファイルだけ更新しました。照合はReleaseの更新済み `SHA256SUMS.txt` を使用してください。旧ZIP・チェックサムもbefore-early-test-cleanup名で保持します。[検証記録](docs/updates/early-test-cleanup.md)。
@@ -248,5 +250,3 @@ UIは[Krea2 Character Catalog](https://github.com/ukr8b3g-cmyk/Krea2-Character-C
 ## 2026-10-24 検索・フィルター位置の修正
 
 v0.1.2の更新ZIPとデモで、画面移動時の検索引継ぎとフィルター位置復元を修正しました。画像・カタログデータは同じで、旧ZIP／チェックサムも保持します。[変更内容と検証](docs/updates/catalog-ui-state-fixes.md)を参照し、現行Releaseのチェックサムで照合してください。
-
-

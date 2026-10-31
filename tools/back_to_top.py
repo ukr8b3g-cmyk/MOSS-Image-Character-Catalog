@@ -1,0 +1,11 @@
+"""Shared back-to-top UI used by the catalog and static sample."""
+JS="  // Floating page navigation; does not change catalog data or filters.\n  function localizeBackToTop(){\n    const button=$('back-to-top');if(!button)return;\n    const label=language==='ja'?'一番上に戻る':'Back to top';\n    button.title=label;button.setAttribute('aria-label',label);\n  }\n  function setupBackToTop(){\n    const button=document.createElement('button');\n    button.id='back-to-top';button.type='button';button.textContent='↑';button.hidden=true;\n    document.body.append(button);localizeBackToTop();\n    const update=()=>{button.hidden=window.scrollY<400;};\n    window.addEventListener('scroll',update,{passive:true});\n    window.addEventListener('resize',update);update();\n    button.addEventListener('click',()=>{\n      const heading=document.querySelector('header h1');\n      if(heading){if(!heading.hasAttribute('tabindex'))heading.tabIndex=-1;heading.focus({preventScroll:true});}\n      window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});\n    });\n  }\n\n"
+CSS='\n/* Floating page navigation, shared with the full online demo. */\n#back-to-top{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:50;display:grid;place-items:center;width:46px;height:46px;padding:0;border:1px solid #6a9cdd;border-radius:7px;background:#3377c7;color:#fff;font-size:28px;font-weight:700;line-height:1;box-shadow:0 3px 12px #0005}\n#back-to-top[hidden]{display:none}\n#back-to-top:hover{background:#245fa8;border-color:#b4d1f5}\n#back-to-top:focus-visible{outline:3px solid var(--accent);outline-offset:3px}\n@media(max-width:650px){#back-to-top{right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom))}}\n'
+
+def transform(js,css):
+    assert 'back-to-top' not in js and '#back-to-top' not in css
+    anchor='  applyTheme();localize();applyLayout();'
+    assert js.count(anchor)==1 and js.count('function localize(){')==1
+    new=js.replace('function localize(){','function localize(){localizeBackToTop();',1)
+    new=new.replace(anchor,JS+'  setupBackToTop();\n'+anchor,1)
+    return new,css+CSS

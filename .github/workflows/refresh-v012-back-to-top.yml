@@ -1,0 +1,43 @@
+name: Publish back-to-top navigation in v0.1.2
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/refresh-v012-back-to-top.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: refresh-v012-back-to-top
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: contains(github.event.head_commit.message, '[publish-back-to-top-v012]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check existing packaging tools
+        run: |
+          python3 --version
+          7z i
+          gh --version
+      - name: Check sample JavaScript
+        run: node --check demo/review.js
+      - name: Build with 7-Zip, verify and promote while retaining old assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/refresh_v012_back_to_top.py --publish --output "$RUNNER_TEMP/back-to-top-release"
+      - name: Preserve package verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v0.1.2-back-to-top-verification
+          path: |
+            ${{ runner.temp }}/back-to-top-release/verification.json
+            ${{ runner.temp }}/back-to-top-release/publication.json
+          if-no-files-found: ignore
