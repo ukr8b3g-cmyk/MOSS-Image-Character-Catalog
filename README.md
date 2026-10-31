@@ -1,6 +1,10 @@
 **[日本語READMEはこちら](README.ja.md)**
 
-## [▶ Open the live demo — 120 sample images](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)
+## [▶ Open the live demo — all 34,251 images](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)
+
+**Hugging Face full catalog:** 33,937 characters + 314 styles. Browse, search, filter, enlarge and copy prompts without installation or a GPU. Images load as needed; the online catalog is read-only.
+
+**[Keep using the 120-image sample demo on GitHub Pages](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)** — 96 characters + 24 styles.
 <img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/f37ba1b4-12d7-4915-a7fe-f6506990f50b" />
 
 
@@ -12,14 +16,16 @@
 
 **New — 2026-10-25: eight style categories.** All 221 styles are assigned once. Open **Styles → Category** in the left filter panel; combine categories with search and switch English/Japanese. Thanks to Brie-Wensleydale for [Issue #2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2). The refreshed v0.1.2 ZIP includes the feature; verify it with the current Release checksum. [Categories and counts](docs/STYLE_CATEGORIES.md) · [314-entry CSV](docs/style-categories.csv).
 
-**Release ZIP refresh (2026-10-27):** Added **93 styles**: **33,937 characters + 314 styles = 34,251 images**. All 314 styles have exactly one of eight categories. The ZIP was selectively updated with 7-Zip; the previous ZIP/checksum are retained as before-style93. Images remain uncurated. The live demo still shows 120 samples. [Rendering settings and verification](docs/updates/style93-generation.md) · [314-style category list](docs/style-categories.csv).
+**Release ZIP refresh (2026-10-27):** Added **93 styles**: **33,937 characters + 314 styles = 34,251 images**. All 314 styles have exactly one of eight categories. The ZIP was selectively updated with 7-Zip; the previous ZIP/checksum are retained as before-style93. Images remain uncurated. The GitHub Pages sample demo still shows 120 samples. [Rendering settings and verification](docs/updates/style93-generation.md) · [314-style category list](docs/style-categories.csv).
 
 > [!NOTE]
-> **The live demo is a preview showing only a small part of the collection.**
+> **Two browser versions are available; neither is a pass/fail selection.**
 >
-> **Demo: 120 images** — 96 characters + 24 styles. Try browsing, searching and copying prompts.
+> **[Hugging Face full catalog — 34,251 images](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog):** 33,937 characters + 314 styles, with search, eight style categories, enlargement and prompt copying.
 >
-> **Full collection: 34,251 images** — 33,937 characters + 314 styles. Download the complete local application and image collection using the ZIP link above.
+> **[GitHub Pages sample demo — 120 images](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/):** the existing preview with 96 characters + 24 styles remains available.
+>
+> **Local application:** download the complete ZIP for image registration, editing and comparison/review tools.
 
 # MOSS-Image Character & Style Catalog
 
@@ -32,28 +38,33 @@ A searchable library of **MOSS-Image-generated images and reusable prompts**, bu
 | **Total** | **34,251** |
 | Files before compression | **About 2.77 GB / 2.58 GiB** |
 | Release ZIP, standard DEFLATE | **2.07 GB / 1.92 GiB** |
-| Online demo | **96 characters + 24 styles**, about **8.36 MB** |
+| Full online catalog (Hugging Face) | **All 34,251 images**, read-only |
+| Sample demo (GitHub Pages) | **96 characters + 24 styles**, about **8.36 MB** |
 
-**Release status — 2026-10-27:** **[v0.1.2 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)** includes the local application, **33,937 character images + 314 styles**, comparison tools and both sample workflow JSON files. The online demo shows only 120 samples. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
+**Release status — 2026-10-27:** **[v0.1.2 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)** includes the local application, **33,937 character images + 314 styles**, comparison tools and both sample workflow JSON files. The Hugging Face online catalog includes all 34,251 images; the GitHub Pages sample remains at 120. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
 
-**The collection has not been selected by pass/fail judgments.** Incorrect character identities, mismatched prompts and weak style results remain included. Neither inclusion nor resemblance proves training-set coverage or accurate reproduction. The demo is an interface sample, not a list of approved results.
+**The collection has not been selected by pass/fail judgments.** Incorrect character identities, mismatched prompts and weak style results remain included. Neither inclusion nor resemblance proves training-set coverage or accurate reproduction. Neither the full online catalog nor the sample demo is a list of approved results.
 
 ## Try it now
 
-**[Browse characters](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/) · [Browse styles](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/?tab=styles)**
+**[Open the full online catalog on Hugging Face](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog) · [Browse all 314 styles](https://hide1-moss-image-character-catalog.static.hf.space/index.html?tab=styles)**
 
-No Python, GPU or installation is needed for the demo. Switch tabs, search names, filter by work or appearance, change the order, click an image to enlarge it, and copy its prompt or original tags. Theme, language and display preferences are remembered in your browser.
+**[Open the original 120-image sample demo on GitHub Pages](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)**
 
-| Feature | Online demo | Downloadable local version |
-|---|---|---|
-| Search, filters, sorting, enlargement, prompt copying | Yes, for 120 samples | Yes, for the full collection |
-| Add Image and edit names, prompts, tags or workflows | — | Yes |
-| Favorites, ratings, Hide and Undo | — | Yes |
-| Comparison judgments and importing confirmed review JSON | — | Yes |
-| Saved per-image workflow JSON | — | Yes |
-| Generate images | No | Use ComfyUI separately |
+Neither browser version needs Python, a GPU or installation. Switch tabs, search names, filter by work, appearance or style category, change the order, enlarge an image and copy its prompt or original tags. Theme, language and display preferences are remembered in your browser. The full catalog loads images as needed; it does not download every image when opened.
 
-The demo uses the same static-view approach as [Krea2](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog). Only the sample site is deployed to GitHub Pages. The full collection exceeds Pages' 1 GB site limit. [Demo scope and deployment](docs/LIVE_DEMO.md).
+| Feature | Hugging Face full catalog | GitHub Pages sample | Downloadable local version |
+|---|---|---|---|
+| Search, filters, sorting, enlargement, prompt copying | All **34,251** images | **120** samples | Full collection |
+| Add Image and edit names, prompts, tags or workflows | — | — | Yes |
+| Favorites, ratings, Hide and Undo | — | — | Yes |
+| Comparison judgments and importing confirmed review JSON | — | — | Yes |
+| Saved per-image workflow JSON | — | — | Yes |
+| Generate images | No | No | Use ComfyUI separately |
+
+**Full online catalog added — 2026-10-31:** published all 33,937 characters and 314 styles on Hugging Face. All published original-image and thumbnail hashes were checked. Chrome checks on the public Space confirmed character/style display, search, category filtering, enlargement and exact clipboard copies of both prompt types. These checks verify delivery and operation, not character or style accuracy.
+
+The GitHub Pages sample uses the same static-view approach as [Krea2](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog) and remains unchanged. Full images are hosted in the companion [Hugging Face Dataset](https://huggingface.co/datasets/hide1/MOSS-Image-Character-Catalog), not added to GitHub Pages. [GitHub Pages sample scope and deployment](docs/LIVE_DEMO.md).
 
 ## What the collection contains
 
@@ -71,7 +82,7 @@ This is a **character-list-based catalog with additional samples**, not an Anima
 
 Outfits, forms and tests count as separate images, not unique identities. Krea2 images and verdicts are not imported. The 314 styles include 40 earlier samples, 181 subsequent samples and 93 additions generated on 2026-10-26. Their prompts describe visual characteristics in English; painter names, media and animation styles are experiments, not accuracy guarantees.
 
-The complete Release ZIP uses standard DEFLATE compression and is about **2.07 GB / 1.92 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2). Model weights, personal settings, logs, locks and reference libraries are excluded. The online demo's filter counts describe its sample subset, not the full collection.
+The complete Release ZIP uses standard DEFLATE compression and is about **2.07 GB / 1.92 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2). Model weights, personal settings, logs, locks and reference libraries are excluded. The GitHub Pages sample's filter counts describe its 120-image subset; the Hugging Face catalog's filters cover the full collection.
 
 ## Download and use the local version
 

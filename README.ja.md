@@ -1,4 +1,8 @@
-## [▶ ライブデモを開く（サンプル120枚）](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)
+## [▶ ライブデモを開く（全34,251枚）](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)
+
+**Hugging Face全件版：キャラクター33,937枚＋スタイル314枚。** インストール・GPUなしで、閲覧・検索・絞り込み・拡大・プロンプトコピーができます。画像は必要に応じて読み込む閲覧専用版です。
+
+**[従来のサンプル120枚デモ（GitHub Pages）も利用できます](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)**（キャラクター96枚＋スタイル24枚）。
 <img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/19c619e5-21dd-464f-90a6-b3c24a22c8fc" />
 
 
@@ -10,14 +14,16 @@
 
 **追加機能（2026-10-25）：スタイルの8カテゴリ絞り込み。** 221件を重複なく分類しました。**スタイル → 左側の「Category／分類」**で選択でき、複数選択・検索併用・日英切替に対応します。[Issue #2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2)で提案いただいたBrie-Wensleydaleさんに感謝します。更新済みv0.1.2 ZIPに同梱し、Releaseのチェックサムも更新しています。[分類と件数](docs/STYLE_CATEGORIES.ja.md) · [全314件CSV](docs/style-categories.csv)。
 
-**配布ZIP更新（2026-10-27）：** **93スタイル**を追加し、**キャラクター33,937枚＋スタイル314枚＝合計34,251枚**になりました。全314スタイルを8カテゴリに重複なく分類しています。7-Zipで必要なファイルのみ更新し、旧ZIP・チェックサムはbefore-style93名で保持しています。画像は未選別です。ライブデモは抜粋120枚のままです。[生成設定と検証記録](docs/updates/style93-generation.md) · [314スタイルの分類一覧](docs/style-categories.csv)。
+**配布ZIP更新（2026-10-27）：** **93スタイル**を追加し、**キャラクター33,937枚＋スタイル314枚＝合計34,251枚**になりました。全314スタイルを8カテゴリに重複なく分類しています。7-Zipで必要なファイルのみ更新し、旧ZIP・チェックサムはbefore-style93名で保持しています。画像は未選別です。GitHub Pagesのサンプルデモは抜粋120枚のままです。[生成設定と検証記録](docs/updates/style93-generation.md) · [314スタイルの分類一覧](docs/style-categories.csv)。
 
 > [!NOTE]
-> **ライブデモは、カタログ全体の一部だけを抜粋したプレビューです。**
+> **ブラウザー版は2種類あります。どちらも合否による選別はしていません。**
 >
-> **デモ掲載：120枚**（キャラクター96枚＋スタイル24枚）。閲覧・検索・プロンプトコピーを試せます。
+> **[Hugging Face全件版：34,251枚](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)**（キャラクター33,937枚＋スタイル314枚）。全件の検索・8カテゴリ絞り込み・拡大・プロンプトコピーに対応します。
 >
-> **全件版：34,251枚**（キャラクター33,937枚＋スタイル314枚）。全件版のローカルアプリと画像一式は、上のZIPリンクからダウンロードできます。
+> **[GitHub Pagesサンプルデモ：120枚](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)**（キャラクター96枚＋スタイル24枚）。従来の抜粋版もそのまま残しています。
+>
+> **ローカル版：** 画像追加・編集・比較判定などを使う場合は、全件版ZIPをダウンロードしてください。
 
 [English](README.md)
 
@@ -32,28 +38,33 @@
 | **合計** | **34,251枚** |
 | 圧縮前のファイル合計 | **約2.77 GB／2.58 GiB** |
 | 配布ZIP・標準DEFLATE | **約2.07 GB／1.92 GiB** |
-| オンラインデモ | **キャラクター96枚＋スタイル24枚**、約**8.36 MB** |
+| 全件オンライン版（Hugging Face） | **全34,251枚**・閲覧専用 |
+| サンプルデモ（GitHub Pages） | **キャラクター96枚＋スタイル24枚**、約**8.36 MB** |
 
-**公開状況（2026-10-27）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル314枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。オンラインデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
+**公開状況（2026-10-27）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル314枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。Hugging Faceオンライン版は全34,251枚、GitHub Pagesのサンプルデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
 
-**画像の合格・不合格による選別はしていません。** キャラクターが違うもの、プロンプトと合わないもの、画風の効きが弱いものも含みます。収録や見た目の類似は、正確な再現や学習データへの収録を証明しません。デモの抜粋も「合格した画像の一覧」ではありません。
+**画像の合格・不合格による選別はしていません。** キャラクターが違うもの、プロンプトと合わないもの、画風の効きが弱いものも含みます。収録や見た目の類似は、正確な再現や学習データへの収録を証明しません。全件オンライン版・サンプルデモともに「合格した画像の一覧」ではありません。
 
 ## まず試す
 
-**[キャラクターを見る](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/) · [スタイルを見る](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/?tab=styles)**
+**[Hugging Faceで全件オンライン版を開く](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog) · [全314スタイルを見る](https://hide1-moss-image-character-catalog.static.hf.space/index.html?tab=styles)**
 
-デモにはPython・GPU・インストールは不要です。タブ切替、名前検索、作品・外見タグによる絞り込み、並べ替え、画像の拡大、プロンプト・元タグのコピーを試せます。テーマ・言語・表示設定はブラウザーに記憶されます。
+**[従来のサンプル120枚デモを開く（GitHub Pages）](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)**
 
-| 機能 | オンラインデモ | ダウンロード版 |
-|---|---|---|
-| 検索・絞り込み・並べ替え・拡大・コピー | 抜粋120枚で利用可 | 全件で利用可 |
-| Add Image、名前・プロンプト・タグ・ワークフローの編集 | — | 利用可 |
-| お気に入り・評価・非表示・Undo | — | 利用可 |
-| 比較判定・確定した判定JSONの読み込み | — | 利用可 |
-| 画像ごとに保存したワークフローJSON | — | 利用可 |
-| 画像生成 | なし | ComfyUIで別途実行 |
+どちらのブラウザー版もPython・GPU・インストールは不要です。タブ切替、名前検索、作品・外見タグ・スタイル分類による絞り込み、並べ替え、画像の拡大、プロンプト・元タグのコピーができます。テーマ・言語・表示設定はブラウザーに記憶されます。全件オンライン版も画像は必要に応じて読み込み、最初に全画像をダウンロードする方式ではありません。
 
-[Krea2](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog)と同様に、静的データで表示する方式です。GitHub Pagesにはサンプルサイトだけを配置します。全件版はPagesのサイト上限1 GBを超えるため、そのまま掲載しません。[デモの範囲・公開方法](docs/LIVE_DEMO.md)。
+| 機能 | Hugging Face全件版 | GitHub Pagesサンプル | ダウンロード版 |
+|---|---|---|---|
+| 検索・絞り込み・並べ替え・拡大・コピー | **全34,251枚** | **抜粋120枚** | 全件で利用可 |
+| Add Image、名前・プロンプト・タグ・ワークフローの編集 | — | — | 利用可 |
+| お気に入り・評価・非表示・Undo | — | — | 利用可 |
+| 比較判定・確定した判定JSONの読み込み | — | — | 利用可 |
+| 画像ごとに保存したワークフローJSON | — | — | 利用可 |
+| 画像生成 | なし | なし | ComfyUIで別途実行 |
+
+**全件オンライン版を追加（2026-10-31）：** キャラクター33,937枚・スタイル314枚をHugging Faceで公開しました。公開した原寸画像とサムネイルのハッシュを全件照合し、Chromeの実公開Space内でキャラクター／スタイル表示・検索・分類絞り込み・拡大・両プロンプトのクリップボード一致を確認しています。配信と操作の確認であり、キャラクターや画風の正確さを保証するものではありません。
+
+GitHub Pagesのサンプルデモは、[Krea2](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog)と同様の静的表示方式で、そのまま残しています。全件の画像は[Hugging Face Dataset](https://huggingface.co/datasets/hide1/MOSS-Image-Character-Catalog)に配置し、GitHub Pagesへは追加していません。[GitHub Pagesサンプルの範囲・公開方法](docs/LIVE_DEMO.md)。
 
 ## 収録内容と追加分
 
@@ -71,7 +82,7 @@
 
 衣装・形態差分・テストも1枚として数えています。ユニークな人物数ではありません。Krea2の画像や判定結果は取り込んでいません。スタイル314枚は先行40枚・追加181枚・今回追加93枚で、英文で画風の特徴を指定しています。画家名・媒体・アニメ表現などを試した結果であり、再現精度の保証ではありません。
 
-全件版ZIPは標準圧縮（DEFLATE）で**約2.07 GB／1.92 GiB**です。正確なバイト数とSHA256は[リリースページ](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2)に掲載します。モデル・個人設定・ログ・ロック・参照画像ライブラリーは含みません。デモ内の絞り込み件数は抜粋分の件数で、全件版の作品別枚数とは異なります。
+全件版ZIPは標準圧縮（DEFLATE）で**約2.07 GB／1.92 GiB**です。正確なバイト数とSHA256は[リリースページ](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2)に掲載します。モデル・個人設定・ログ・ロック・参照画像ライブラリーは含みません。GitHub Pagesサンプルの絞り込み件数は抜粋120枚の件数です。Hugging Face全件版では、全件を対象に絞り込めます。
 
 ## ダウンロードとローカル版の使い方
 
