@@ -8,9 +8,11 @@
 
 ### [↓ 全件版ZIPをダウンロード — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
 
+**2026-10-31 プロンプト修正：** 更新版v0.1.2 ZIPとHugging Face全件デモに修正版を収録し、拡大画面に**「再生成用をコピー」**を追加しました。全34,249件を規則で点検し、コピー文5,641件・再生成用全文33,785件を修正。画像は再生成していません。当時のワークフローは旧構図文を含む履歴として保持しているため、新しい生成には専用コピーボタンを使用してください。曖昧な元データは要確認として残し、尻尾の減少効果は未検証です。GitHub Pagesの120枚サンプルは別の従来プレビューです。[修正内容と制約](docs/prompt-repair-20261031/README.ja.md)。現在のReleaseチェックサムを使用してください。旧版はbefore-prompt-revision名で保持します。
+
 **配布ZIP更新（2026-10-31）：** 初期テストのピカチュウ・サーナイト2件を、画像・プロンプト・タグ・ワークフローとともに削除。**キャラクター33,935枚＋スタイル314枚＝34,249枚**。ほかの画像・生成設定は維持し、合否による選別は追加していません。7-Zipで必要なファイルだけ更新しました。照合はReleaseの更新済み `SHA256SUMS.txt` を使用してください。旧ZIP・チェックサムもbefore-early-test-cleanup名で保持します。[検証記録](docs/updates/early-test-cleanup.md)。
 
-**34,249枚・約2.07 GB／1.92 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
+**34,249枚・約2.07 GB／1.93 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
 **v0.1.2配布ZIP更新（2026-10-24）：** カタログの太字タイトルから、このリポジトリを新しいタブで開けるようになりました。ZIP内の日本語・英語READMEも更新しています。34,158枚の画像と生成設定は同じです。ダウンロードファイル名は従来どおりで、照合にはReleaseの更新済み `SHA256SUMS.txt` を使ってください。[更新内容](docs/updates/catalog-title-link.md)。
 
@@ -39,7 +41,7 @@
 | スタイル | **314枚** |
 | **合計** | **34,249枚** |
 | 圧縮前のファイル合計 | **約2.77 GB／2.58 GiB** |
-| 配布ZIP・標準DEFLATE | **約2.07 GB／1.92 GiB** |
+| 配布ZIP・標準DEFLATE | **約2.07 GB／1.93 GiB** |
 | 全件オンライン版（Hugging Face） | **全34,249枚**・閲覧専用 |
 | サンプルデモ（GitHub Pages） | **キャラクター96枚＋スタイル24枚**、約**8.36 MB** |
 
@@ -84,7 +86,7 @@ GitHub Pagesのサンプルデモは、[Krea2](https://github.com/ukr8b3g-cmyk/K
 
 衣装・形態差分・テストも1枚として数えています。ユニークな人物数ではありません。Krea2の画像や判定結果は取り込んでいません。スタイル314枚は先行40枚・追加181枚・今回追加93枚で、英文で画風の特徴を指定しています。画家名・媒体・アニメ表現などを試した結果であり、再現精度の保証ではありません。
 
-全件版ZIPは標準圧縮（DEFLATE）で**約2.07 GB／1.92 GiB**です。正確なバイト数とSHA256は[リリースページ](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2)に掲載します。モデル・個人設定・ログ・ロック・参照画像ライブラリーは含みません。GitHub Pagesサンプルの絞り込み件数は抜粋120枚の件数です。Hugging Face全件版では、全件を対象に絞り込めます。
+全件版ZIPは標準圧縮（DEFLATE）で**約2.07 GB／1.93 GiB**です。正確なバイト数とSHA256は[リリースページ](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2)に掲載します。モデル・個人設定・ログ・ロック・参照画像ライブラリーは含みません。GitHub Pagesサンプルの絞り込み件数は抜粋120枚の件数です。Hugging Face全件版では、全件を対象に絞り込めます。
 
 ## ダウンロードとローカル版の使い方
 
@@ -246,4 +248,5 @@ UIは[Krea2 Character Catalog](https://github.com/ukr8b3g-cmyk/Krea2-Character-C
 ## 2026-10-24 検索・フィルター位置の修正
 
 v0.1.2の更新ZIPとデモで、画面移動時の検索引継ぎとフィルター位置復元を修正しました。画像・カタログデータは同じで、旧ZIP／チェックサムも保持します。[変更内容と検証](docs/updates/catalog-ui-state-fixes.md)を参照し、現行Releaseのチェックサムで照合してください。
+
 

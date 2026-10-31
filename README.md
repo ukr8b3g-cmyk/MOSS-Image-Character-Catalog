@@ -10,9 +10,11 @@
 
 ### [↓ Download the complete catalog ZIP — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
 
+**2026-10-31 prompt revision:** The refreshed v0.1.2 ZIP and full Hugging Face demo include revised reusable captions and a new **Copy revised generation prompt** button. All 34,249 entries were checked with explicit rules; 5,641 reusable captions and 33,785 full-scene prompts changed. Images were not regenerated. Original workflows retain their historical prompts, including the old framing sentence; use the new copy button for future generation. Ambiguous source attributes remain flagged, and fewer unwanted tails have not been demonstrated. The 120-image GitHub Pages sample remains a separate historical preview. [Changes and limitations](docs/prompt-repair-20261031/README.md). Use the current Release checksum; older assets are retained as before-prompt-revision.
+
 **2026-10-31 package refresh:** Removed the two early Pikachu/Gardevoir test entries, including their images and saved prompt/tag/workflow files. **33,935 characters + 314 styles = 34,249 images.** Other images and generation settings are unchanged; no pass/fail selection was added. The ZIP was selectively updated using 7-Zip. Use the refreshed Release `SHA256SUMS.txt`; the previous ZIP/checksum are retained as before-early-test-cleanup. [Verification](docs/updates/early-test-cleanup.md).
 
-**34,249 images · about 2.07 GB / 1.92 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
+**34,249 images · about 2.07 GB / 1.93 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
 **v0.1.2 package refresh — 2026-10-24:** The catalog title now opens this repository in a new tab. The ZIP also includes updated English and Japanese READMEs. The 34,158 images and rendering settings are unchanged. The download filename stays the same; use the updated `SHA256SUMS.txt` on the Release page to verify this refreshed package. [Update details](docs/updates/catalog-title-link.md).
 
@@ -39,7 +41,7 @@ A searchable library of **MOSS-Image-generated images and reusable prompts**, bu
 | Styles | **314** |
 | **Total** | **34,249** |
 | Files before compression | **About 2.77 GB / 2.58 GiB** |
-| Release ZIP, standard DEFLATE | **2.07 GB / 1.92 GiB** |
+| Release ZIP, standard DEFLATE | **2.07 GB / 1.93 GiB** |
 | Full online catalog (Hugging Face) | **All 34,249 images**, read-only |
 | Sample demo (GitHub Pages) | **96 characters + 24 styles**, about **8.36 MB** |
 
@@ -84,7 +86,7 @@ This is a **character-list-based catalog with additional samples**, not an Anima
 
 Outfits, forms and tests count as separate images, not unique identities. Krea2 images and verdicts are not imported. The 314 styles include 40 earlier samples, 181 subsequent samples and 93 additions generated on 2026-10-26. Their prompts describe visual characteristics in English; painter names, media and animation styles are experiments, not accuracy guarantees.
 
-The complete Release ZIP uses standard DEFLATE compression and is about **2.07 GB / 1.92 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2). Model weights, personal settings, logs, locks and reference libraries are excluded. The GitHub Pages sample's filter counts describe its 120-image subset; the Hugging Face catalog's filters cover the full collection.
+The complete Release ZIP uses standard DEFLATE compression and is about **2.07 GB / 1.93 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2). Model weights, personal settings, logs, locks and reference libraries are excluded. The GitHub Pages sample's filter counts describe its 120-image subset; the Hugging Face catalog's filters cover the full collection.
 
 ## Download and use the local version
 
@@ -246,4 +248,5 @@ Maintainer-authored documentation and the published demo code are covered by [MI
 ## 2026-10-24 UI state refresh
 
 The refreshed v0.1.2 ZIP and demo fix search carry-over during view navigation and restore filter scroll after reload. Images and catalog data are unchanged. Previous ZIP/checksum assets are retained. See [details and validation](docs/updates/catalog-ui-state-fixes.md); use the current Release checksum.
+
 

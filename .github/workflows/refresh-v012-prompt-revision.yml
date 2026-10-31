@@ -1,0 +1,44 @@
+name: Publish corrected prompts in v0.1.2
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/refresh-v012-prompt-revision.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: refresh-v012-prompt-revision
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: contains(github.event.head_commit.message, '[publish-prompt-revision-v012]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check existing packaging tools
+        run: |
+          python3 --version
+          7z i
+          gh --version
+      - name: Verify prompt transformation regressions
+        run: python3 tools/test_prompt_revision.py
+      - name: Build with 7-Zip, verify and promote while retaining old assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/refresh_v012_prompt_revision.py --publish --output "$RUNNER_TEMP/prompt-revision-release"
+      - name: Preserve package verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v0.1.2-prompt-revision-verification
+          path: |
+            ${{ runner.temp }}/prompt-revision-release/verification.json
+            ${{ runner.temp }}/prompt-revision-release/publication.json
+          if-no-files-found: ignore
+
