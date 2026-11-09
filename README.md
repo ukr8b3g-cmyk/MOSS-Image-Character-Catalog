@@ -1,14 +1,16 @@
 **[日本語READMEはこちら](README.ja.md)**
 
-## [▶ Open the live demo — all 34,249 images](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)
+## [▶ Open the live demo — all 34,680 images](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog)
 
-**Hugging Face full catalog:** 33,935 characters + 314 styles. Browse, search, filter, enlarge and copy prompts without installation or a GPU. Images load as needed; the online catalog is read-only.
+**Hugging Face full catalog:** 34,366 characters + 314 styles. Browse, search, filter, enlarge and copy prompts without installation or a GPU. Images load as needed; the online catalog is read-only.
 
 **[Keep using the 120-image sample demo on GitHub Pages](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)** — 96 characters + 24 styles.
 <img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/f37ba1b4-12d7-4915-a7fe-f6506990f50b" />
 
 
 ### [↓ Download the complete catalog ZIP — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
+
+**2026-11-10 — 432 character samples added:** Films and TV Series now have independent filters. Includes Hong Kong films and two anime characters. One older actor-unspecified Luke was removed, leaving the new version. Current total: **34,366 characters + 314 styles = 34,680 images**. New samples use SFT INT8 ConvRot + LoRA 1.0, 8 steps, CFG 1.0, Small Decoder, er_sde/simple, seed 8961184, 896×1184, WebP quality 70. Actual generation prompts, reusable prompts and tags are retained. Samples remain **uncurated**; resemblance, clothing and character accuracy are not guaranteed. [Details and list](docs/updates/film-tv432-20261110.md).
 
 **2026-11-04 — Shuffle:** Click **🔀 Shuffle** beside **Sort by** in Characters or Styles. It shuffles the current search and filter results and returns to page 1. Page navigation keeps that order. Click again to reshuffle, or choose a sort option to return to that order. This update is in the v0.1.2 ZIP and the full Hugging Face demo.
 
@@ -18,7 +20,7 @@
 
 **2026-10-31 package refresh:** Removed the two early Pikachu/Gardevoir test entries, including their images and saved prompt/tag/workflow files. **33,935 characters + 314 styles = 34,249 images.** Other images and generation settings are unchanged; no pass/fail selection was added. The ZIP was selectively updated using 7-Zip. Use the refreshed Release `SHA256SUMS.txt`; the previous ZIP/checksum are retained as before-early-test-cleanup. [Verification](docs/updates/early-test-cleanup.md).
 
-**34,249 images · about 2.07 GB / 1.93 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
+**34,680 images · about 2.09 GB / 1.94 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
 **v0.1.2 package refresh — 2026-10-24:** The catalog title now opens this repository in a new tab. The ZIP also includes updated English and Japanese READMEs. The 34,158 images and rendering settings are unchanged. The download filename stays the same; use the updated `SHA256SUMS.txt` on the Release page to verify this refreshed package. [Update details](docs/updates/catalog-title-link.md).
 
@@ -29,7 +31,7 @@
 > [!NOTE]
 > **Two browser versions are available; neither is a pass/fail selection.**
 >
-> **[Hugging Face full catalog — 34,249 images](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog):** 33,935 characters + 314 styles, with search, eight style categories, enlargement and prompt copying.
+> **[Hugging Face full catalog — 34,680 images](https://huggingface.co/spaces/hide1/MOSS-Image-Character-Catalog):** 34,366 characters + 314 styles, with search, eight style categories, enlargement and prompt copying.
 >
 > **[GitHub Pages sample demo — 120 images](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/):** the existing preview with 96 characters + 24 styles remains available.
 >
@@ -41,12 +43,12 @@ A searchable library of **MOSS-Image-generated images and reusable prompts**, bu
 
 | Complete download | Images / size |
 |---|---:|
-| Characters | **33,935** |
+| Characters | **34,366** |
 | Styles | **314** |
-| **Total** | **34,249** |
-| Files before compression | **About 2.77 GB / 2.58 GiB** |
-| Release ZIP, standard DEFLATE | **2.07 GB / 1.93 GiB** |
-| Full online catalog (Hugging Face) | **All 34,249 images**, read-only |
+| **Total** | **34,680** |
+| Files before compression | **About 2.85 GB / 2.65 GiB** |
+| Release ZIP, standard DEFLATE | **2.09 GB / 1.94 GiB** |
+| Full online catalog (Hugging Face) | **All 34,680 images**, read-only |
 | Sample demo (GitHub Pages) | **96 characters + 24 styles**, about **8.36 MB** |
 
 **Release status — 2026-10-27:** **[v0.1.2 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)** includes the local application, **33,935 character images + 314 styles**, comparison tools and both sample workflow JSON files. The Hugging Face online catalog includes all 34,249 images; the GitHub Pages sample remains at 120. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
@@ -63,7 +65,7 @@ Neither browser version needs Python, a GPU or installation. Switch tabs, search
 
 | Feature | Hugging Face full catalog | GitHub Pages sample | Downloadable local version |
 |---|---|---|---|
-| Search, filters, sorting, enlargement, prompt copying | All **34,249** images | **120** samples | Full collection |
+| Search, filters, sorting, enlargement, prompt copying | All **34,680** images | **120** samples | Full collection |
 | Add Image and edit names, prompts, tags or workflows | — | — | Yes |
 | Favorites, ratings, Hide and Undo | — | — | Yes |
 | Comparison judgments and importing confirmed review JSON | — | — | Yes |
@@ -90,7 +92,7 @@ This is a **character-list-based catalog with additional samples**, not an Anima
 
 Outfits, forms and tests count as separate images, not unique identities. Krea2 images and verdicts are not imported. The 314 styles include 40 earlier samples, 181 subsequent samples and 93 additions generated on 2026-10-26. Their prompts describe visual characteristics in English; painter names, media and animation styles are experiments, not accuracy guarantees.
 
-The complete Release ZIP uses standard DEFLATE compression and is about **2.07 GB / 1.93 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2). Model weights, personal settings, logs, locks and reference libraries are excluded. The GitHub Pages sample's filter counts describe its 120-image subset; the Hugging Face catalog's filters cover the full collection.
+The complete Release ZIP uses standard DEFLATE compression and is about **2.09 GB / 1.94 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2). Model weights, personal settings, logs, locks and reference libraries are excluded. The GitHub Pages sample's filter counts describe its 120-image subset; the Hugging Face catalog's filters cover the full collection.
 
 ## Download and use the local version
 
@@ -186,7 +188,7 @@ These settings document the actual saved catalog workflows, not universal recomm
 | Catalog image format | **WebP quality 70**, lossy, method 0 | Same |
 | Portable sample filename | **`MOSS_Image_Character_Sample.json`** | **`MOSS_Image_Style_Sample.json`** |
 
-The character workflow uses **SFT, not Base**. An 8-step acceleration LoRA at **1.0** made the large run practical. It is not a maximum-quality benchmark of unaccelerated SFT or BF16. The first **11,692** character images used `flux2-vae.safetensors`; the later **22,243** used `full_encoder_small_decoder.safetensors`. Per-image saved workflows preserve those differences; the portable character sample uses Small Decoder.
+The character workflow uses **SFT, not Base**. An 8-step acceleration LoRA at **1.0** made the large run practical. It is not a maximum-quality benchmark of unaccelerated SFT or BF16. The first **11,692** character images used `flux2-vae.safetensors`; the later **22,674** used `full_encoder_small_decoder.safetensors`. Per-image saved workflows preserve those differences; the portable character sample uses Small Decoder.
 
 Character prompts combine the source name, work and appearance tags with one centered subject, full-body framing, generous margins, a light-gray background and soft lighting. Human subjects receive a clothed standing-pose instruction. Source tags, the reusable copy prompt and actual generation prompt are distinct. The MOSS prompt-enhancer skill was not used for these character batches.
 
@@ -252,3 +254,4 @@ Maintainer-authored documentation and the published demo code are covered by [MI
 ## 2026-10-24 UI state refresh
 
 The refreshed v0.1.2 ZIP and demo fix search carry-over during view navigation and restore filter scroll after reload. Images and catalog data are unchanged. Previous ZIP/checksum assets are retained. See [details and validation](docs/updates/catalog-ui-state-fixes.md); use the current Release checksum.
+
