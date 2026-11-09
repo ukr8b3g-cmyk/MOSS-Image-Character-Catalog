@@ -51,7 +51,7 @@
 | 全件オンラインデモ版（閲覧専用・Hugging Face） | **全34,680枚**・閲覧専用 |
 | サンプルデモ（GitHub Pages） | **キャラクター96枚＋スタイル24枚**、約**8.36 MB** |
 
-**公開状況（2026-10-27）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター33,935枚＋スタイル314枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。Hugging Faceオンライン版は全34,249枚、GitHub Pagesのサンプルデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
+**公開状況（2026-11-10）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター34,366枚＋スタイル314枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。Hugging Faceオンライン版は全34,680枚、GitHub Pagesのサンプルデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
 
 **画像の合格・不合格による選別はしていません。** キャラクターが違うもの、プロンプトと合わないもの、画風の効きが弱いものも含みます。収録や見た目の類似は、正確な再現や学習データへの収録を証明しません。全件オンライン版・サンプルデモともに「合格した画像の一覧」ではありません。
 

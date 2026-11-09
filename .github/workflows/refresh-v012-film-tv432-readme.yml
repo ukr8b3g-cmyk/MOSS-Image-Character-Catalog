@@ -1,0 +1,32 @@
+name: Finalize bilingual README in v0.1.2
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/refresh-v012-film-tv432-readme.yml']
+permissions:
+  contents: read
+concurrency:
+  group: refresh-v012-film-tv432-readme
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: contains(github.event.head_commit.message, '[publish-film-tv432-readme-v012]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Restore exact 7-Zip update, verify and publish retaining old assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/refresh_v012_film_tv432_readme.py --output "$RUNNER_TEMP/film-tv432-release"
+      - name: Preserve release verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v0.1.2-film-tv432-verification
+          path: |
+            ${{ runner.temp }}/film-tv432-release/verification.json
+            ${{ runner.temp }}/film-tv432-release/publication.json
+          if-no-files-found: ignore
